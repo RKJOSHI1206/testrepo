@@ -1,1 +1,2 @@
 This file is to test "git reset" command.
+This line is to check 'git revert' command.
