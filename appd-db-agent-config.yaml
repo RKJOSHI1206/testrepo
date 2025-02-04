@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: appd-db-agent-config
+  namespace: appdynamics-db
+data:
+  controller-info.xml: 
+    <controller-info>
+      <controller-host-name>tietoevry-prod.saas.appdynamics.com</controller-host-name>
+      <controller-port>443</controller-port>
+      <account-name>tietoevry-prod</account-name>
+      <account-access-key>q43d65fajbca</account-access-key>
+      <ssl-enabled>true</ssl-enabled>
+      <database>
+        <name>Oracle_RDS</name>
+        <type>oracle</type>
+        <host>tph-tieto-nfr-cluster01-db.cvvfiypgniyn.eu-north-1.rds.amazonaws.com</host>
+        <port>1521</port>
+        <sid>ORCL</sid>
+        <username>tphuser</username>
+        <password>Secr3tpass</password>
+      </database>
+    </controller-info>
